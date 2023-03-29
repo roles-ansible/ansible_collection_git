@@ -1,0 +1,4 @@
+[submodule "roles/gitea"]
+	path = roles/gitea
+  branch = main
+	url = https://github.com/roles-ansible/ansible_role_gitea.git
