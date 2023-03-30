@@ -1,0 +1,25 @@
+---
+name: Galaxy release
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches: ['main']
+  release:
+    types: ['created']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'checkout git repo'
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+          submodules: true
+
+
+      - name: "Publish Ansible"
+        uses: ansible/ansible-publish-action@v1.0.0
+        with:
+          api_key: "${{ secrets.GALAXY_API_KEY }}"
