@@ -1,11 +1,15 @@
+[![collection l3d.git](https://ansible.l3d.space/svg/l3d.git_ansible-collection_collection.svg)](https://galaxy.ansible.com/l3d/git)
+[![Maintainance](https://ansible.l3d.space/svg/l3d.git_maintainance_collection.svg)](https://ansible.l3d.space/#l3d.git)
+[![License](https://ansible.l3d.space/svg/l3d.git_license_collection.svg)](LICENSE)
+
  Ansible Collection - l3d.git
 ============================
 
-This is the Ansible Collection l3d.git.
+This is the Ansible Collection ``l3d.git``.
 Here are all our ansible roles for installing git server.
 
-## Roles in l3d.git
-- [l3d.git.gitea](https://github.com/roles-ansible/ansible_role_gitea.git) - Ansible role to install gitea or forgejo git server
+## Ansible Roles in l3d.git
+- [![l3d.git.gitea](https://ansible.l3d.space/svg/l3d.git.gitea_ansible-role.svg)](https://github.com/roles-ansible/ansible_role_gitea.git) - Ansible role to install gitea or forgejo git server
 
 ## Using this Collection
 You can install the collection using ansible-galaxy by running:
@@ -13,7 +17,17 @@ You can install the collection using ansible-galaxy by running:
 ansible-galaxy collection install l3d.git
 ```
 
-Or you could clone this collection in your local ansible project as ``collections/ansible_collections/l3d/git/``.
+Or you could clone this collection in your local ansible project for example to ``collections/ansible_collections/l3d/git/``. Make sure you checkout [git submodules](https://git-scm.com/docs/git-submodule) too. Example:
+```
+# Clone git Repo with submodules to specified path
+git clone --recursive https://github.com/roles-ansible/ansible_collection_git.git collections/ansible_collections/l3d/git/
+
+# change directory
+cd collections/ansible_collections/l3d/git/
+
+# optionally init git submodules
+git submodule update --init --recursive
+```
 
 You can also list a collection in ``requirements.yml``:
 ```yaml
