@@ -24,4 +24,4 @@ jobs:
       - name: 'Lint Ansible Playbook'
         uses: ansible/ansible-lint-action@v6
         with:
-          targets: "."
+          path: "."
