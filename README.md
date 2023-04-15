@@ -27,6 +27,9 @@ cd collections/ansible_collections/l3d/git/
 
 # optionally init git submodules
 git submodule update --init --recursive
+
+# optionally install all requirements
+ansible-galaxy install -r requirements.yml
 ```
 
 You can also list a collection in ``requirements.yml``:
@@ -34,6 +37,7 @@ You can also list a collection in ``requirements.yml``:
 ---
 collections:
   - name: l3d.git
+    version: ">=1.0.1"
 ```
 
 ## Include roles in your playbook
