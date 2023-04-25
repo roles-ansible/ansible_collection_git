@@ -3,8 +3,6 @@ name: Galaxy release
 
 # yamllint disable-line rule:truthy
 on:
-  push:
-    branches: ['main']
   release:
     types: ['created']
 
@@ -17,7 +15,6 @@ jobs:
         with:
           lfs: true
           submodules: true
-
 
       - name: "Publish Ansible"
         uses: ansible/ansible-publish-action@v1.0.0
