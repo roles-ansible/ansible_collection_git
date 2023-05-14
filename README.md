@@ -37,7 +37,7 @@ You can also list a collection in ``requirements.yml``:
 ---
 collections:
   - name: l3d.git
-    version: ">=1.0.5"
+    version: ">=1.0.6"
 ```
 
 ## Include roles in your playbook
