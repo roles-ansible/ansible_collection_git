@@ -14,8 +14,14 @@ Here are all our ansible roles for installing git server.
 ## Using this Collection
 You can install the collection using ansible-galaxy by running:
 ```bash
-ansible-galaxy collection install l3d.git
+ansible-galaxy collection install l3d.git:1.0.7
 ```
+
+Remember you can to Upgrade to the latest version of the l3d.git collection using the ``--upgrade`` parameter:
+```bash
+ansible-galaxy collection install l3d.git --upgrade
+```
+
 
 Or you could clone this collection in your local ansible project for example to ``collections/ansible_collections/l3d/git/``. Make sure you checkout [git submodules](https://git-scm.com/docs/git-submodule) too. Example:
 ```
@@ -37,7 +43,7 @@ You can also list a collection in ``requirements.yml``:
 ---
 collections:
   - name: l3d.git
-    version: ">=1.0.6"
+    version: ">=1.0.7"
 ```
 
 ## Include roles in your playbook
@@ -57,4 +63,16 @@ Example Playbook using the l3d.git.gitea role:
     gitea_protocol: http
     gitea_start_ssh: true
     gitea_fork: 'forgejo'
+```
+
+## Requirements
+The roles in this collection using the ``ansible.builtin`` and ``community.general`` ansible Collections. To download the latest forgejo/gitea release we use json_query. This requires ``jmespath`` to be available.
+
+### Example Requirements Installation:
+```bash
+# galaxy requirements
+ansible-galaxy install -r requirements.yml --upgrade
+
+# pip requirements
+pip install -r requirements.txt
 ```
