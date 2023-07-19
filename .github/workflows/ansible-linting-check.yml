@@ -2,15 +2,11 @@
 name: Ansible Lint check
 
 # yamllint disable-line rule:truthy
-on:
-  push:
-    branches: '*'
-  pull_request:
-    branches: '*'
+on: [push, pull_request]
 
 jobs:
   build:
-
+    name: Ansible Lint
     runs-on: ubuntu-latest
 
     steps:
