@@ -1,4 +1,4 @@
-[![collection l3d.git](https://ansible.l3d.space/svg/l3d.git_ansible-collection_collection.svg)](https://galaxy.ansible.com/l3d/git)
+[![collection l3d.git](https://ansible.l3d.space/svg/l3d.git_ansible-collection_collection.svg)](https://galaxy.ansible.com/ui/repo/published/l3d/git/)
 [![Maintainance](https://ansible.l3d.space/svg/l3d.git_maintainance_collection.svg)](https://ansible.l3d.space/#l3d.git)
 [![License](https://ansible.l3d.space/svg/l3d.git_license_collection.svg)](LICENSE)
 
@@ -14,7 +14,7 @@ Here are all our ansible roles for installing git server.
 ## Using this Collection
 You can install the collection using ansible-galaxy by running:
 ```bash
-ansible-galaxy collection install l3d.git:1.0.10
+ansible-galaxy collection install l3d.git:1.0.11
 ```
 
 Remember you can to Upgrade to the latest version of the l3d.git collection using the ``--upgrade`` parameter:
@@ -43,7 +43,7 @@ You can also list a collection in ``requirements.yml``:
 ---
 collections:
   - name: l3d.git
-    version: ">=1.0.10"
+    version: ">=1.0.11"
 ```
 
 ## Include roles in your playbook
