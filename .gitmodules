@@ -2,3 +2,6 @@
 	path = roles/gitea
   branch = main
 	url = https://github.com/roles-ansible/ansible_role_gitea.git
+[submodule "roles/forgeo_runner"]
+	path = roles/forgeo_runner
+	url = https://github.com/roles-ansible/ansible_role_forgeo_runner
