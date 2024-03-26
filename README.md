@@ -10,7 +10,7 @@ Here are all our ansible roles for installing git server.
 
 ## Ansible Roles in l3d.git
 - [![l3d.git.gitea](https://ansible.l3d.space/svg/l3d.git.gitea_ansible-role.svg)](https://github.com/roles-ansible/ansible_role_gitea.git) - Ansible role to install gitea or forgejo git server
-- [![l3d.git.forgejo_runner](https://ansible.l3d.space/svg/l3d.git.forgejo_runner_ansible-role.svg)](https://github.com/roles-ansible/ansible_role_forgejo-runner.git) - Ansible role to install forgejo runner
+- [![l3d.git.forgejo_runner](https://ansible.l3d.space/svg/l3d.git.forgejo_runner_ansible-role.svg)](https://github.com/roles-ansible/ansible_role_forgeo_runner.git) - Ansible role to install forgejo runner
 
 ## Using this Collection
 You can install the collection using ansible-galaxy by running:
