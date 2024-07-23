@@ -15,7 +15,7 @@ Here are all our ansible roles for installing git server.
 ## Using this Collection
 You can install the collection using ansible-galaxy by running:
 ```bash
-ansible-galaxy collection install l3d.git:1.1.4
+ansible-galaxy collection install l3d.git:1.1.5
 ```
 
 Remember you can to Upgrade to the latest version of the l3d.git collection using the ``--upgrade`` parameter:
@@ -44,7 +44,7 @@ You can also list a collection in ``requirements.yml``:
 ---
 collections:
   - name: l3d.git
-    version: ">=1.1.4"
+    version: ">=1.1.5"
 ```
 
 ## Include roles in your playbook
