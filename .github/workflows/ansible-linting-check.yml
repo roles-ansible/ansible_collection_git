@@ -22,4 +22,4 @@ jobs:
         with:
           target: "./"
           python_dependency: "jmespath"
-          collections_yml: "requirements.yml"
+          required_collections: 'community.general'

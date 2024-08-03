@@ -34,9 +34,6 @@ cd collections/ansible_collections/l3d/git/
 
 # optionally init git submodules
 git submodule update --init --recursive
-
-# optionally install all requirements
-ansible-galaxy collection install -r requirements.yml --upgrade
 ```
 
 You can also list a collection in ``requirements.yml``:
@@ -69,11 +66,8 @@ Example Playbook using the l3d.git.gitea role:
 ## Requirements
 The roles in this collection using the ``ansible.builtin`` and ``community.general`` ansible Collections. To download the latest forgejo/gitea release we use json_query. This requires ``jmespath`` to be available.
 
-### Example Requirements Installation:
+### Example Python Requirements Installation:
 ```bash
-# galaxy requirements
-ansible-galaxy collection install -r requirements.yml --upgrade
-
 # pip requirements
 pip install -r requirements.txt
 ```
